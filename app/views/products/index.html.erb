@@ -10,7 +10,6 @@ $(function () {
       $("#description-" + id).text(data);
     });
     $.get("/products/" + id + "/inventory", function(data) {
-      console.log(data)
       if (data === "true") {
         $("#inventory-" + id).text("Available");
       } else {
